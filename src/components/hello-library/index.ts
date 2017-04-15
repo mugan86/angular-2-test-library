@@ -1,17 +1,2 @@
-import {NgModule, ModuleWithProviders} from '@angular/core';
-import {HelloLibraryComponent} from './hello-library.component';
-/**
- * The Hello Library component is an example how to write components in the correct way.
- *
- * @author Anartz Mugika
- */
-@NgModule({
-    declarations: [HelloLibraryComponent],
-    exports: [HelloLibraryComponent]
-})
-
-export class HelloWorldModule {
-    static forRoot(): ModuleWithProviders {
-        return {ngModule: HelloWorldModule, providers: []};
-    }
-}
+export {HelloLibraryModule} from './hello-library.module';
+export {HelloLibraryComponent} from './hello-library.component';
